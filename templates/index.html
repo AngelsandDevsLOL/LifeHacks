@@ -1,1 +1,69 @@
+{% extends "base.html" %}
 
+{% block content %}
+
+<section id="welcome" class="bg-cover text-wrap bg-[url('static/assets/home-background-image.png')] h-96 p-10">
+    <div class="flex justify-cent m-10">
+    <h1 class="pt-25 text-9xl font-black text-white ">Welcome to SoulHaven</h1>
+    
+    </div>
+</section>
+
+<section class="text-wrap m-20 mt-10 mb-10">
+    <div> 
+        <h2 class="text-6xl font-bold">Who are we?</h2>
+        <br>
+        <div>
+        <p>Dive into a community of empathy, access personalized resources, and shape a brighter mental health future. Your story ignites change – experience it with SoulHaven.</p>
+      <br>
+        <p>At SoulHaven, we provide students with an authentic anonymous sharing website where students can share their own struggles with mental health and hear about the struggles of others. It serves as a safe space where students, when feeling overwhelmed by their emotions, can lower their guard and express themselves without the fear of being judged or feeling vulnerable.</p>
+        <br>
+        <p>Share your story below with us today!</p>
+    </div>
+    </div>
+
+</section>
+<div class="border-t border-gray-400 my-4 mx-8"></div>
+
+<section class="m-20 mt-10 mb-10">
+    <h4 class="text-3xl font-semibold">SoulHaven: Tell Us Your Story</h4>
+    <form action="/submit" method="POST">
+<div class="pt-5 flex space-x-10">
+        <div class="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required class="border-b border-gray-400 my-4 ml-2 outline-none focus:border-blue-500 focus:ring-0">
+        </div>
+        <div class="">
+            <label for="age">Age:</label>
+            <input type="text" id="age" name="age" required class="border-b border-gray-400 my-4 ml-2 outline-none focus:border-blue-500 focus:ring-0">
+        </div>
+        <div class="">
+            <label for="name">Location:</label>
+            <input type="text" id="location" name="location" required class="border-b border-gray-400 my-4 ml-2 outline-none focus:border-blue-500 focus:ring-0">
+        </div>
+        </div>
+        <div class="pt-3 ">
+            <label for="age" class="block">Tell us a story you would like to share about your mental health. </label>
+            <textarea id="story" name="story" rows="10" required class="mt-2 p-2 border border-gray-300 rounded w-full"></textarea>
+        </div>
+        <div class="pt-3 ">
+            <button type="submit" class="mt-4 px-4 py-2 border border-gray-400 bg-gray-200 text-gray-800 rounded hover:bg-gray-300">Submit</button> <!-- Submit button -->
+        </div>
+    </form>
+</section>
+
+<div class="border-t border-gray-400 my-4 mx-8"></div>
+
+<section class="text-wrap m-20 mt-10 mb-10">
+    <h2 class="text-3xl font-semibold">Community Submissions</h2>
+    <br>
+    <p>SoulHaven is an anonymous sharing website for Canadian high school students to authentically share their struggles with mental health. We're a safe space for you to express yourself without fear; a reminder that you are never alone. Once you submit your story, it will auto-populate here, helping millions of other students in Canada find theirs. Please read what others have to say too. </p>
+    <br>
+    <p class="">Here's what other Canadians have to share...</p>
+    <div class="mt-10 p-7 border border-gray-300 rounded-3xl ">
+        <h4 class="text-lg mb-2">Name, Age, Location</h4>
+        <p>Coping with PTSD is like living in two worlds at once. There are moments when I'm right here, and then suddenly I'm back in that place, feeling everything all over again. Nightmares are a regular thing, and crowded places trigger panic. It's hard to explain to people why certain things set me off. Therapy helps, but progress is slow. Some days, just getting out of bed feels like a victory. I'm lucky to have a few friends who understand, but it's still isolating. Despite the challenges, I'm holding onto the hope that one day, the past won't have such a tight grip on me and I can finally breathe freely.</p>
+    </div>
+</section>
+
+{% endblock %}

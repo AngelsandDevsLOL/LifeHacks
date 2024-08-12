@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SoulHaven</title>
+    
+</head>
+<body>
+    
+    <nav class="flex justify-between items-center p-4 bg-black text-white shadow-md">
+        <div class="flex items-center justify-center space-x-2">
+            <img src="static/assets/logo.png" alt="logo" class="w-10 h-10">
+            <span class="website-name">SoulHaven</span>
+                </div>
+
+        <ul class="flex space-x-4">
+            <li><a href="templates/index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer class="bg-black text-white text-center p-4 mt-8">
+        <p class="text-sm">&copy; 2024 SoulHaven. All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/scripts.js"></script>
+
+
+</body>
+</html>
